@@ -19,22 +19,32 @@ ul {
     padding: 20px;
     max-width: 700px;
 }
-@media(max-width: 1000px) {
+@media(orientation: portrait) {
     .documentContainer{
         padding: 20px;
         max-width: 100%;
     }
     .contact{
-        font-size: 2vh;
+        font-size: 1.5em !important;
     }
     .dates{
-        font-size: 2vh;
+        font-size: 15px !important;
     }
     #languageLinks {
-        font-size: 2vh;
+        font-size: 1.5em !important;
+        margin-bottom: 10px !important;
     }
     .button {
-        font-size: 2vh;
+        font-size: 1.5em !important;
+        height: 60px !important;
+    }
+    #myImg{ 
+        height: 240px !important;
+        width: auto !important;
+        margin-right: 20px !important;
+    }
+    h1{
+        font-size: 3em;
     }
 }
 
@@ -49,11 +59,11 @@ ul {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 2vh;
+    font-size: 12px;
     line-height : 1
 }
 .dates {
-    font-size: 2vh;
+    font-size: 10px;
     margin-top: -5px;
 }
 .cvHeader {
@@ -79,7 +89,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 2vh;
+    font-size: 12px;
     margin-bottom: 5px;
 }
 .button {
@@ -91,11 +101,11 @@ ul {
     background-color:white;
     transition: background-color .1s ease;
     cursor: pointer;
-    width: 130px;
+    width: 100%;
     height: 30px;
     border-radius: 6px !important;
     padding: 12px 16px;
-    font-size: 2vh;
+    font-size: 12px;
     box-shadow: 0 2px 3px 0 rgba(189, 190, 197, 0.5);
 }
 .button:focus{
