@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="cvDocument" class="documentContainer">
+        <div class="cvHeader">
+            <div class="cvHeaderLeft">
+                <div class="contact">
+                    <img id="myImg" src="foto_Enrique.jpg" alt="Foto Enrique">
+                    <div class="contactDetails">
+                        <p>c/ Los Mesejo 13</p>
+                        <p>Madrid C.P. 28007</p>
+                        <p><b>(+34) 616 393 445</b></p>
+                        <p><b>autokike@gmail.com</b></p>
+                    </div>
+                </div>
+                <h1>Enrique Esteban García</h1>
+            </div>
+            <div class="cvHeaderRight">
+                <div id="languageLinks"> 
+                    <a style="text-decoration: none" href="index.html">
+                        <b style="color: grey;">ENGLISH</b>
+                    </a>
+                    <div style="margin: 0px 5px">/</div>
+                    <div><b>ESPAÑOL</b></div>
+                </div>
+                <button class="button" id="downloadBtn" onclick="print()">
+                    <img style="width: 25px; height: auto" src="download_icon.png">
+                    <div><b>PDF</b></div>
+                </button>
+            </div>
+        </div>
+        <div class="line"></div>
+        <h2>HABILIDADES</h2>
+        <p>
+            Con una amplia <b>formación matemática</b>, me interesa resolver problemas técnicos complejos de manera pragmática.
+        </p>
+        <p>
+            Como <b>ingeniero electrónico</b>, tengo experiencia en diseño y desarrollo de dispositivos siguiendo directivas CE, 
+            ingeniería de campo, formación, mantenimiento y optimización de sistemas.
+        </p>
+        <p>
+            Por otro lado, mi pasión es el <b>desarrollo software</b>, en gran medida usando
+            <i>herramientas de código abierto y Linux</i>. Mi especialidad son las aplicaciones web y de escritorio que interaccionan
+            con dispositivos tales como cámaras de video o fotográficas, IoT, audio, protocolos de comunicación y servicios en la nube.
+            Con más de diez años desarrollando software y firmware, estoy familiarizado con la mayoría de lenguages y entornos usados para 
+            estas aplicaciones: 
+        </p>
+        <ul>
+            <li>
+                Procesamiento digital de la señal (DSP) aplicado de datos de sensores, audio, imagen y 3D para análisis y filtrado con <i>C, C++ and Python</i>
+            </li>
+            <li>
+                Prototipado de sistemas electrónicos con <i>Arduino, Raspberry Pi y otras plataformas similares</i>.
+            </li>
+            <li>
+                Protocolos de comunicación: serie (<i>USB, RS485,
+                    RS232, SPI, I2C</i>), ethernet (<i>Modbus TCP, WAMP Web sockets</i>)
+            </li>
+            <li>
+                Desarrollo de aplicaciones web con <i>HTML5 y React/Vue</i> (front-end) y <i>NodeJS/Django/Flask</i> (back-end)
+            </li>
+            <li>
+                Servicios en la nube: Desarrollo de API y gestión de unidades de alamacenamiento y procesado para instanciar sistemas en tiempo real con <i>Microsoft Azure/Amazon Web Services</i>.
+            </li>
+            <li>
+                Integración y entrega continua (CI/CD) con <i>Github actions</i>.
+            </li>
+            <li>
+                En la actualidad estudiando Ciencia de Datos y Aprendizage automático con <i>Google CodeLab: Tensor Flow, Keras, Matplotlib and Pandas</i>.
+            </li>
+        </ul>
+        <div class="line"></div>
+        <h2 class="breakPage">EXPERIENCIA</h2>
+        <h3><b>BotOn</b> - <i>Full stack developer</i></h3>
+        <p class='dates'>March 2021 - PRESENTE</p>
+        <ul>
+            <li>Plataforma software de gestión de flotas de vehículos.</li>
+        </ul>
+        <h3><b>Factum Arte</b> - <i>Ingeniero jefe</i></h3>
+        <p class='dates'>Septiembre 2014 - Marzo 2021</p>
+        <ul>
+            <li>Desarrollo de escáneres 3D y fotográficos para clientes en centros de digitalización en Italia, Rusia y Reino Unido.
+            </li>
+            <li>Sistema en la nube basdado en máquinas virtuales Azure y Data lakes para el procesado de datos Lidar y fotogrametría. 
+            </li>
+            <li>
+                Visores de imágenes multicapa de alta resolución en HTML5
+            </li>
+            <li>
+                Automatización de procesos de fabricación digital con impresoras 3D y máquinas de corte CNC.
+            </li>
+        </ul>
+        <h3><b>Freelance</b> - <i>Consultor tecnológico y desarrollador</i></h3>
+        <p class='dates'>Junio 2013 - Septiembre 2014</p>
+        <ul>
+            <li> Desarrollo de software para la administración pública (Oficina de turismo de la Rioja).</li>
+            <li> Asistente técnico en talleres de usos creativos de electrónica (Instituto Europeo de Diseño, Madrid Destino).</li>
+        </ul>
+        <h3><b>Medialab Prado</b> - <i>Coordinador técnico</i></h3>
+        <p class='dates'>Diciembre 2012 - Mayo 2013</p>
+        <ul>
+            <li> Sistema de transmisión de video y gestión de contenido multimedia basado en Amazon Web Service.</li>
+            <li> Soporte técnico en talleres con Arduino and Raspberry PI.</li>
+        </ul>
+        <h3><b>Monster Electronics</b> - <i>Fundador</i></h3>
+        <p class='dates'>Octubre 2008 - Octubre 2012</p>
+        <ul>
+            <li> Administración de la compañía y gestión de cuentas.</li>
+            <li> Software y firmware para configurar y controlar refes de sensores usando protocolos serie (RS485) y web sockets (WAMP).
+            </li>
+        </ul>
+        <h3 class="breakPage"><b>Prodys</b> - <i>Ingeniero software</i></h3>
+        <p class='dates'>Julio 2007 - Octubre 2008</p>
+        <ul>
+            <li> Desarrollo de algoritmos de compresión de audio con procesadores de coma fija DSP Textas Instrument, para equipos profesionales de transmisión de audio.
+            </li>
+        </ul>
+        <div class="line"></div>
+        <h2>EDUCACIÓN</h2>
+        <h3><b>Escuela Técnica Superior de Ingenieros Industriales Universidad
+                Politécnica de Madrid</b> — <i>Ingeniero Industrial</i></h3>
+        <p class='dates'>September 1999 - May 2007, Madrid</p>
+        <p>
+            Grado finalizado en 6 años, con especialización en Electrónica Industrial y Automatización. 
+            Durante los últimos dos años de universidad, trabajé como interino en el departamento de 
+            Ingeniería Electrónica (DIE-UPM) haciendo documentación y soporte en cursos de domótica y
+            electrónica musical. A partir de esta experiencia realicé mi proyecto de fin de carrera. 
+        </p>
+        <div class="line"></div>
+        <h2>PREMIOS</h2>
+        <h3><b>Premio al mejor proyecto fin de carrera 2008</b> — <i>ETSII UPM</i></h3>
+        <p>
+            Título: "Plataforma para la creación de instrumentos musicales basados en síntesis de sonido 
+            en tiempo real".
+        </p>
+        <h3><b>Premio extraordinario 1998</b> — <i>Comunidad de Madrid</i>
+        </h3>
+        <p>
+            Prueba de conocimientos generales con una beca para el primer
+            año en la universidad.
+        </p>
+    </div>
+    <script>
+        function print() {
+            document.getElementById("languageLinks").style.display = "none"
+            document.getElementById("downloadBtn").style.display = "none"
+            const cv2Print = document.getElementById('cvDocument')
+            var opt = {
+                margin:       0.5,
+                filename:     `Enrique_Esteban_CV_es.pdf`,
+                pagebreak:    { avoid: ['h2', 'h3', 'p', 'tr','li'], before:['.breakPage'] },
+                image:        { type: 'jpeg', quality: 1 },
+                html2canvas:  { scale: 4, dpi: 192, letterRendering: true, useCORS: true},
+                jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' },
+            };
+            html2pdf().set(opt).from(cv2Print).toPdf().get('pdf').then(function (pdfObject) {
+            pdfObject.setProperties({
+                title: "Curriculum Vitae",
+                author: "Enrique Esteban",
+            })
+            pdfObject.setFont('helvetica')
+            pdfObject.setFontSize(11)
+            const pdf_pages = pdfObject.internal.pages
+            for (var i = 1; i < pdf_pages.length; i++) {
+                // We are telling our pdfObject that we are now working on this page
+                pdfObject.setPage(i)
+                // The 10,200 value is only for A4 landscape. You need to define your own for other page sizes
+                pdfObject.text(`- ${i} -`, 
+                (pdfObject.internal.pageSize.getWidth()/2), (pdfObject.internal.pageSize.getHeight() - 0.45))
+            }
+            }).save().then(()=>{
+                document.getElementById("downloadBtn").style.display = "flex";
+                document.getElementById("languageLinks").style.display = "flex";
+            })
+        }
+    </script>
+</body>
+
+</html>
